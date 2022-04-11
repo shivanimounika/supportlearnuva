@@ -1,0 +1,62 @@
+<div id="login-page">
+    <div class="container px-4 py-5 mx-auto">
+        <div class="card card0">
+            <div class="d-flex flex-lg-row flex-column-reverse">
+                <div class="card card1">
+                    <form  [formGroup]="loginForm" (ngSubmit)="login()">
+                       
+                        <div class="row justify-content-center my-auto">
+                            <div class="col-md-8 col-10 my-5">
+                                <h3 class="mb-5 text-center heading"> E-Commerce App </h3>
+                                <h6 class="msg-info">Please login to your account</h6>
+                                <div class="form-group">
+                                    <label class="form-control-label text-muted">Email</label>
+                                    <input type="email" formControlName="email" id="email" name="email"
+                                        placeholder="Enter email id" class="form-control">
+                                    <!-- <div id="emailHelp" *ngIf="!email.valid && (email.dirty || email.touched)"
+                                        class="form-text text-muted">email is required</div> -->
+
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Enter Mobile Number</label>
+                                    <input type="text" formControlName="mobilenumber" placeholder="Mobilenumber" >
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-control-label text-muted">Password</label>
+                                    <input type="password" id="psw" name="psw" placeholder="Password"
+                                        formControlName="password" class="form-control">
+                                    <!-- <div *ngIf="f['password'].touched && f['password'].invalid"
+                                        class="alert alert-danger">
+                                        <div *ngIf="f['password'].errors && f['password'].errors['required']">password
+                                            is required.</div>
+                                        <div *ngIf="f['password'].errors && f['password'].errors['minlength']">password
+                                            should be 3 character.</div>
+                                    </div> -->
+                                </div>
+                                <div class="row justify-content-center my-3 px-3"> <button type="submit"
+                                        class="btn-block btn-color">Login </button> </div>
+                                <div class="row justify-content-center my-2">
+                                    <a routerLink="/send-mail"><small class="text-muted">Forgot Password?</small>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="bottom text-center mb-5">
+                        <a routerLink="/register" class="sm-text mx-auto mb-3">Don't have an account?<button
+                                class="btn btn-white ml-2">Create new</button></a>
+                    </div>
+                </div>
+                <div class="card card2">
+                    <div class="my-auto mx-md-5 px-md-5 right">
+                        <h3 class="text-white">We are more than just a company</h3>
+                        <small class="text-white">Lorem
+                            ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
